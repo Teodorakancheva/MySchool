@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background ="@color/colorYellow"
+    tools:context="com.example.myschool.student.StudentDownload">
+
+    <LinearLayout
+        android:id="@+id/linWiew"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp">
+
+    <TextView
+        android:id="@+id/text_fullname"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/colorUpload"
+        android:text="fullname"
+        android:layout_weight="1"/>
+
+
+    <TextView
+        android:id="@+id/text_grade"
+        android:layout_width="50dp"
+        android:layout_marginTop="10dp"
+        android:text="grade"
+        android:layout_weight="1"
+        android:textColor="@color/colorUpload"
+        android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+<Button
+    android:id="@+id/btnViewDownload"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="View"
+    android:background="@color/colorBlue"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@+id/linWiew"
+    android:layout_marginTop="20dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerTemp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/btnViewDownload"
+        android:layout_marginTop="30dp"
+        android:scrollbars="vertical"
+        />
+
+</RelativeLayout>

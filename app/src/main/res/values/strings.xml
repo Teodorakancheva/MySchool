@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MySchool</string>
+    <string-array name="school_subject">
+        <item>Select subject</item>
+        <item>Geography</item>
+        <item>History</item>
+        <item>Mathematics</item>
+        <item>Music</item>
+        <item>Biology</item>
+        <item>Chemistry</item>
+        <item>Physics</item>
+    </string-array>
+</resources>

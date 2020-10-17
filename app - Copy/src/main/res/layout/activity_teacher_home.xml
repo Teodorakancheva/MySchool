@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    tools:context=".teacher.TeacherHome">
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/colorAccent" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:fontFamily="sans-serif-black"
+        android:text="Welcome"/>
+
+    <TextView
+        android:id="@+id/fullname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:fontFamily="sans-serif-black"
+        android:text="Name"/>
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:fontFamily="sans-serif-black"
+        android:text="Email"
+        android:layout_below="@+id/fullname"/>
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="70dp"
+        android:background="@color/colorAccent"
+        android:drawableLeft="@drawable/ic_message"
+        android:hint="SEND MESSAGE"
+        android:padding="5dp"
+        android:textColorHint="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        android:layout_below="@+id/email"/>
+
+    <Button
+        android:id="@+id/btnUpload"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/colorAccent"
+        android:drawableLeft="@drawable/ic_upload"
+        android:hint="UPLOAD FILE"
+        android:padding="5dp"
+        android:textColorHint="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        android:layout_below="@+id/btnSend"/>
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/colorAccent"
+        android:drawableLeft="@drawable/ic_exit"
+        android:hint="LOGOUT"
+        android:padding="5dp"
+        android:textColorHint="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        android:layout_below="@+id/btnUpload"/>
+
+
+
+</RelativeLayout>

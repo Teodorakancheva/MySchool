@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background ="@color/colorPink"
+    tools:context=".teacher.TeacherDownload">
+
+    <TextView
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textColor="@color/colorUpload"
+        android:text="DOWNLOAD HOMEWORK"/>
+
+    <LinearLayout
+        android:id="@+id/linWiew"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/view"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="30dp">
+
+        <Spinner
+            android:id="@+id/subject_spinner"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <EditText
+            android:id="@+id/text_Grade"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:textColorHint="@color/colorUpload"
+            android:hint="grade"
+            />
+        <Button
+            android:id="@+id/btnViewDownload"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="View"
+            android:background="@color/colorYelow1"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/linWiew" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/View"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/linWiew"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp">
+
+        <Spinner
+            android:id="@+id/name_spinner"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btnSelectStud"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorYelow1"
+            android:text="SELECT NAME"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/linWiew" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/View2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/View"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp">
+
+         <EditText
+             android:id="@+id/text_key"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="10dp"
+             android:layout_marginRight="10dp"
+             android:textColorHint="@color/colorUpload"
+             android:hint="enter key" />
+
+        <EditText
+            android:id="@+id/text_mark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColorHint="@color/colorUpload"
+            android:layout_marginRight="10dp"
+            android:hint="enter mark" />
+
+        <Button
+            android:id="@+id/btnSend"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="40dp"
+            android:text="Send mark"
+            android:background="@color/colorYelow1"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/linWiew" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerTemp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/View2"
+        android:layout_marginTop="30dp"
+        android:scrollbars="vertical" />
+
+</RelativeLayout>
+

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background ="@color/colorPrimaryWhite"
+    tools:context=".MainActivity">
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <Button
+        android:id="@+id/btnTeacher"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:background="@color/colorPrimary"
+        android:drawableLeft="@drawable/ic_teacher"
+        android:hint="TEACHER"
+        android:textSize="20dp"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/btnStudent"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorUpload"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/btnTeacher"
+        android:background="@color/colorYellow"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/ic_student"
+        android:hint="STUDENT"
+        android:textSize="20dp"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/btnParent"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/btnStudent"
+        android:textColor="@color/colorUpload"
+        android:background="@color/colorBlue"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/ic_parent"
+        android:hint="PARENT"
+        android:textSize="20dp"
+        android:textStyle="bold|italic" />
+
+</RelativeLayout>
+

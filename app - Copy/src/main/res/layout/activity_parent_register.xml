@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".parent.ParentRegisterActivity">
+
+   <ProgressBar
+    android:id="@+id/progressbar"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@color/colorAccent" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:fontFamily="sans-serif-black"
+        android:text="Registration parent"/>
+
+    <EditText
+        android:id="@+id/fullname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Full name"
+        android:inputType="text"
+        android:drawableLeft="@drawable/ic_parent"
+        android:layout_below="@+id/progressbar"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:drawableLeft="@drawable/ic_email"
+        android:layout_below="@+id/fullname"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="30dp"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:drawableLeft="@drawable/ic_password"
+        android:layout_below="@+id/email"/>
+
+    <EditText
+        android:id="@+id/childName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="30dp"
+        android:inputType="text"
+        android:hint="The full name of the student"
+        android:drawableLeft="@drawable/ic_student"
+        android:layout_below="@+id/password"/>
+
+    <EditText
+        android:id="@+id/gradeChild"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="30dp"
+        android:inputType="text"
+        android:hint="Class of student"
+        android:drawableLeft="@drawable/ic_sclass"
+        android:layout_below="@+id/childName"/>
+
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:text="REGISTER"
+        android:textSize="20dp"
+        android:fontFamily="sans-serif-black"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorAccent"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/centerPoint"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_below="@+id/gradeChild" />
+
+    <TextView
+        android:id="@+id/linkLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/btnRegister"
+        android:textSize="20dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginLeft="16dp"
+        android:text="Already have an account? Login" />
+
+
+</RelativeLayout>

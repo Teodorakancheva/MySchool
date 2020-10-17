@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background ="@color/colorPrimary"
+    tools:context=".teacher.MessageTeacher">
+
+    <TextView
+        android:id="@+id/vew"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorUpload"
+        android:text="SEND / GET MESAGE"
+        android:textSize="20dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/vew_teach_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorUpload"
+        android:text="Teacher name"
+        android:textSize="20dp"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:id="@+id/linL"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/textView"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/spinnerSend"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/colorUpload"
+            android:layout_marginLeft="10dp" />
+
+
+        <EditText
+            android:id="@+id/textGrade"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:textColorHint="@color/colorUpload"
+            android:hint="class"/>
+
+        <Button
+            android:id="@+id/btnSelectGrade"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/colorYellow"
+            android:textColor="@color/colorAccent"
+            android:text="Select"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/linL"
+        android:padding="15dp">
+
+        <EditText
+            android:id="@+id/messege"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:gravity="top"
+            android:hint="Enter text"
+            android:textColorHint="@color/colorUpload"
+            android:padding="2dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linB"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textView"
+        android:orientation="horizontal">
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:background="@color/colorYellow"
+        android:textColor="@color/colorAccent"
+        android:text="SEND" />
+
+        <Button
+            android:id="@+id/btnGetMessege"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/colorYellow"
+            android:textColor="@color/colorAccent"
+            android:layout_weight="1"
+            android:text="Get Messeges" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/viewMessege"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_margin="16dp"
+        android:hint="Get messege"
+        android:textColorHint="@color/colorUpload"
+        android:layout_marginRight="16dp"
+        android:layout_height="170dp"/>
+
+
+</LinearLayout>

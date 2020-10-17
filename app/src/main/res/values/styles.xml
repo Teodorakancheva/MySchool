@@ -1,0 +1,11 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorBlue</item>
+    </style>
+    <integer name="btnplusview">1</integer>
+    <integer name="btnpluspos">2</integer>
+
+</resources>

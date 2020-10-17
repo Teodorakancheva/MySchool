@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background ="@color/colorBlue"
+    tools:context=".student.DetailHomework">
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/ic_andoid" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/subject_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:textColor="@color/colorBrown"
+            android:textStyle="bold"
+            android:text="subject"
+            android:textSize="12dp"/>
+
+    <TextView
+        android:id="@+id/subject_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/colorBrown"
+        android:textStyle="bold"
+        android:text="Subject"
+        android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/grade_View"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/colorBrown"
+            android:textStyle="bold"
+            android:text="grade"
+            android:textSize="12dp"/>
+    <TextView
+        android:id="@+id/grade_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/colorBrown"
+        android:textStyle="bold"
+        android:text="Grade"
+        android:textSize="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+    <TextView
+        android:id="@+id/name_Stud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="name"
+        android:textColor="@color/colorBrown"
+        android:textStyle="bold"
+        android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/name_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Name"
+            android:textColor="@color/colorBrown"
+            android:textStyle="bold"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+    </LinearLayout>
+
