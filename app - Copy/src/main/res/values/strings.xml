@@ -1,8 +1,0 @@
-<resources>
-    <string name="app_name">MySchool</string>
-    <string-array name="type">
-        <item>teacher</item>
-        <item>student</item>
-        <item>parent</item>
-    </string-array>
-</resources>
