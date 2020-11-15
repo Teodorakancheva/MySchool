@@ -1,5 +1,5 @@
 # MySchool
-diplomWork
+DiplomWork is
 Android application with three roles teacher, student and parent. 
 The application uses a relational database MySQL.
 The teacher / student has the opportunity to upload and download homework (image file). 
